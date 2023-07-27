@@ -288,5 +288,5 @@
                                   &none    &sk LEFT_SHIFT       &sl 1  &lt 2 ESC    &mt LS(LC(LA(LGUI))) BACKSPACE  &lt 4 SPACE          &lt 3 TAB &none
             >;
         };
-
+};
 };

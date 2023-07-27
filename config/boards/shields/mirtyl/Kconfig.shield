@@ -1,5 +1,5 @@
 config SHIELD_MIRTYL_LEFT
-    def_bool $(shields_list_contains, mirtyl_left)
+    def_bool $(shields_list_contains,mirtyl_left)
 
 config SHIELD_MIRTYL_RIGHT
-    def_bool $(shields_list_contains, mirtyl_right)
+    def_bool $(shields_list_contains,mirtyl_right)
