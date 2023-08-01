@@ -1,6 +1,10 @@
 #include "mirtyl.dsti"
 
-default_kscan: kscan {
+&default_transform {
+	col-offset = <5>;
+};
+
+&default_kscan: kscan {
     col-gpios = <&xiao_d 0  GPIO_ACTIVE_HIGH>,
                 <&xiao_d 9  GPIO_ACTIVE_HIGH>,
                 <&xiao_d 10 GPIO_ACTIVE_HIGH>,
