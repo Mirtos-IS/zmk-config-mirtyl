@@ -1,4 +1,4 @@
-if SHIELD_MIRTYL_RIGHT
+if SHIELD_MIRTYL_LEFT
 
 config ZMK_KEYBOARD_NAME
 	default "Mirtyl"
