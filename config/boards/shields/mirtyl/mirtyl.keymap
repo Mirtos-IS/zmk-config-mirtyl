@@ -1,6 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 
 &mt {
     flavor = "tap-preferred";
@@ -277,9 +278,9 @@
         Alpha {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+            // | CTRL |  A  |  &out OUT_BLE  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+            //              | &out OUT_BLE  | GUI | LWR | SPC |   | ENT | RSE  | ALT | &out OUT_BLE
 
             bindings = <
            &kp Y        &kp C             &kp L       &kp M      &kp K                             &kp Z        &kp F              &kp U  &lt 5 COMMA   &kp APOSTROPHE  
