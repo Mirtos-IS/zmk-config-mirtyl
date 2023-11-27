@@ -1,6 +1,6 @@
 #include "mirtyl.dsti"
 
-&kscan0 {
+&default_transform {
 	col-offset = <5>;
 };
 
