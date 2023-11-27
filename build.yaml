@@ -13,9 +13,9 @@
 #
 ---
 include:
-  - board: mirtyl
+  - board: seeeduino_xiao_ble
     shield: mirtyl_left
-  - board: mirtyl
+  - board: seeeduino_xiao_ble
     shield: mirtyl_right
-  - board: mirtyl
+  - board: seeeduino_xiao_ble
     shield: settings_reset
