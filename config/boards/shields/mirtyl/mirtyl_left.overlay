@@ -12,3 +12,7 @@
                 <&xiao_d 9  GPIO_ACTIVE_HIGH>,
                 <&xiao_d 3  GPIO_ACTIVE_HIGH>;
 };
+
+&bootloader_key_right {
+    status = "okay";
+};
