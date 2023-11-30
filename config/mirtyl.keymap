@@ -1,6 +1,12 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 
 &mt {
     flavor = "tap-preferred";
@@ -26,7 +32,9 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <200>;
             global-quick-tap;
-            bindings = <&kp>, <&kp>;
+            bindings =
+                <&kp>,
+                <&kp>;
         };
     };
 
@@ -80,7 +88,6 @@
                 <&macro_release>,
                 <&kp RIGHT_CONTROL>;
         };
-
         Shift_enter: Shift_enter {
             compatible = "zmk,behavior-macro";
             label = "new_macro";
@@ -275,16 +282,73 @@
 
         Alpha {
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  &out OUT_BLE  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //              | &out OUT_BLE  | GUI | LWR | SPC |   | ENT | RSE  | ALT | &out OUT_BLE
+            // |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |
+            // |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |
+            // |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |
+            //       | SHF | GUI | LWR | SPC |   | ENT | RSE  | ALT | ENT |
 
             bindings = <
-&kp Y           &kp C         &kp L             &kp M       &kp K                                      &kp Z        &kp F       &kp U              &lt 5 COMMA  &kp APOSTROPHE
-&mt LEFT_GUI I  &mt LCTRL S   &mt LEFT_SHIFT R  &mt LALT T  &kp G                                      &kp P        &mt LALT N  &mt RIGHT_SHIFT E  &mt RCTRL A  &mt RIGHT_GUI O
-&kp Q           &kp V         &kp W             &kp D       &kp J                                      &kp B        &kp H       &kp SEMICOLON      &kp DOT      &kp X
-                &out OUT_BLE  &sk LEFT_SHIFT    &sl 1       &lt 2 ESC  &mt LS(LC(LA(LGUI))) BACKSPACE  &lt 4 SPACE  &lt 3 TAB   &kp ENTER
+           &kp Y        &kp C             &kp L       &kp M      &kp K                             &kp Z        &kp F              &kp U  &lt 5 COMMA   &kp APOSTROPHE
+  &mt LEFT_GUI I  &mt LCTRL S  &mt LEFT_SHIFT R  &mt LALT T      &kp G                             &kp P   &mt LALT N  &mt RIGHT_SHIFT E  &mt RCTRL A  &mt RIGHT_GUI O
+           &kp Q        &kp V             &kp W       &kp D      &kp J                             &kp B        &kp H      &kp SEMICOLON      &kp DOT            &kp X
+                             &sk LEFT_SHIFT    &sl 1       &lt 2 ESC  &none                             &mt LS(LC(LA(LGUI))) BACKSPACE  &lt 4 SPACE &lt 3 TAB &kp ENTER
+            >;
+        };
+
+        Symbol {
+            // -----------------------------------------------------------------------------------------
+            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
+            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
+            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
+            //                    | GUI |     | SPC |   | ENT |     | ALT |
+
+            bindings = <
+  &kp DOUBLE_QUOTES   &kp QUESTION  &kp MINUS  &kp GREATER_THAN  &kp TILDE          &kp GRAVE        &kp CARET  &Macros_u_acute  &Macros_a_caret  &Macros_o_caret
+    &Macros_i_acute         &kp AT  &kp EQUAL        &kp DOLLAR   &kp HASH           &kp AMPS         &kp STAR  &Macros_e_acute  &Macros_a_acute  &Macros_o_acute
+           &kp PIPE  &kp BACKSLASH   &Cedilha       &kp PERCENT   &kp PLUS    &Macros_a_grave  &kp EXCLAMATION  &Macros_e_caret  &Macros_a_tilde  &Macros_o_tilde
+                          &kp LCTRL  &kp LGUI   &sk RALT  &none                     &kp COLON        &kp SLASH   &kp UNDERSCORE &none
+            >;
+        };
+
+        symnum {
+            // -----------------------------------------------------------------------------------------
+            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
+            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+            //                    | GUI |     | SPC |   | ENT |     | ALT |
+
+            bindings = <
+          &mo 5      &kp K_REDO        &kp K_COPY           &kp K_PASTE   &kp K_CUT        &kp SLASH               &kp PLUS            &kp DOT        &kp MINUS          &kp STAR
+         &kp N1          &kp N2            &kp N3                &kp N4      &kp N5     &kp NUMBER_6                 &kp N7             &kp N8           &kp N9            &kp N0
+  &kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp DELETE        &kp SLASH  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN
+                                                 &none      &none       &none       &none    &kp BACKSPACE              &kp SPACE          &kp COMMA &none
+            >;
+        };
+
+        System {
+            bindings = <
+  &none  &kp K_MUTE    &kp K_VOL_DN      &kp C_VOL_UP  &kp SCROLLLOCK    &kp PAUSE_BREAK  &kp F1  &kp F2  &kp F3  &kp F10
+  &none  &kp K_PREV      &kp K_NEXT  &kp K_PLAY_PAUSE  &kp KP_NUMLOCK    &kp PRINTSCREEN  &kp F4  &kp F5  &kp F6  &kp F11
+  &none       &none    &kp C_BRI_DN      &kp C_BRI_UP      &kp INSERT        &kp K_PASTE  &kp F7  &kp F8  &kp F9  &kp F12
+              &sk LEFT_SHIFT  &sk LEFT_CONTROL    &sk LEFT_ALT &none         &sys_reset   &none   &none &none
+            >;
+        };
+
+        Nav {
+            bindings = <
+         &none          &none      &kp K_COPY   &kp K_PASTE  &none    &none  &kp PAGE_UP  &kp PAGE_DOWN      &none   &none
+  &kp LEFT_GUI      &kp LCTRL  &kp LEFT_SHIFT  &kp LEFT_ALT  &none    &none     &kp LEFT       &kp DOWN  &kp RIGHT  &kp UP
+         &none  &kp LS(ENTER)       &kp ENTER         &none  &none    &none      &kp END       &kp HOME   &kp C_PP   &none
+                                &none         &sl 5  &none &none    &none        &none          &none &none
+            >;
+        };
+
+        BLE {
+            bindings = <
+     &none         &none         &none         &none   &sys_reset     &sys_reset  &none  &none  &none  &none
+     &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &sys_reset          &none  &none  &none  &none  &none
+&bt BT_CLR         &none         &none         &none  &bootloader    &bootloader  &none  &none  &none  &none
+                                    &none &none         &none        &none          &none  &none  &none &none
             >;
         };
     };
