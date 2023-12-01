@@ -305,7 +305,7 @@
 &kp DOUBLE_QUOTES  &kp QUESTION   &kp MINUS  &kp GREATER_THAN  &kp TILDE                &kp GRAVE        &kp CARET        &Macros_u_acute  &Macros_a_caret  &Macros_o_caret
 &Macros_i_acute    &kp AT         &kp EQUAL  &kp DOLLAR        &kp HASH                 &kp AMPS         &kp STAR         &Macros_e_acute  &Macros_a_acute  &Macros_o_acute
 &kp PIPE           &kp BACKSLASH  &Cedilha   &kp PERCENT       &kp PLUS                 &Macros_a_grave  &kp EXCLAMATION  &Macros_e_caret  &Macros_a_tilde  &Macros_o_tilde
-&none              &kp LCTRL      &none      &sk RALT          &kp LEFT_WIN  &kp COLON  &kp SLASH        &kp DELETE       &kp UNDER
+&none              &kp LCTRL      &none      &sk RALT          &kp LEFT_WIN  &kp SLASH  &kp UNDER        &kp DELETE       &kp COLON
             >;
         };
 
