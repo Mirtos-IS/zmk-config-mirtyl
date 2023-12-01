@@ -290,7 +290,7 @@
 &kp Y           &kp C           &kp L             &kp M       &kp K                                       &kp Z        &kp F       &kp U              &lt 5 COMMA  &kp APOSTROPHE
 &mt LEFT_GUI I  &mt LCTRL S     &mt LEFT_SHIFT R  &mt LALT T  &kp G                                       &kp P        &mt LALT N  &mt RIGHT_SHIFT E  &mt RCTRL A  &mt RIGHT_GUI O
 &kp Q           &kp V           &kp W             &kp D       &kp J                                       &kp B        &kp H       &kp SEMICOLON      &kp DOT      &kp X
-                   &mt LS(LC(LA(LGUI))) BACKSPACE   &kp ESCAPE    &sl 1      &sk LEFT_SHIFT                           &sl 1 &lt 4 SPACE  &lt 3 TAB   &kp ENTER
+                   &mt LS(LC(LA(LGUI))) BACKSPACE   &kp ESCAPE    &sl 1      &sk LEFT_SHIFT                           &shift_enter &lt 4 SPACE  &lt 3 TAB   &kp ENTER
             >;
         };
 
