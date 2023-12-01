@@ -42,14 +42,14 @@
         Caps {
             timeout-ms = <50>;
             bindings = <&kp CAPSLOCK>;
-            key-positions = <7 8 9>;
+            key-positions = <7 9 8>;
         };
 
         Ctrl_Backspace {
             timeout-ms = <50>;
             layers = <0 1>;
             bindings = <&kp ENTER>;
-            key-positions = <8 9>;
+            key-positions = <9 8>;
         };
 
         shift_enter {
