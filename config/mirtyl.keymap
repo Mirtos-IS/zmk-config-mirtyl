@@ -305,7 +305,7 @@
 &kp DOUBLE_QUOTES  &kp QUESTION   &kp MINUS  &kp GREATER_THAN  &kp TILDE             &kp GRAVE        &kp CARET        &Macros_u_acute  &Macros_a_caret  &Macros_o_caret
 &Macros_i_acute    &kp AT         &kp EQUAL  &kp DOLLAR        &kp HASH              &kp AMPS         &kp STAR         &Macros_e_acute  &Macros_a_acute  &Macros_o_acute
 &kp PIPE           &kp BACKSLASH  &Cedilha   &kp PERCENT       &kp PLUS              &Macros_a_grave  &kp EXCLAMATION  &Macros_e_caret  &Macros_a_tilde  &Macros_o_tilde
-                   &kp LCTRL      &kp LGUI   &sk RALT          &none      &kp COLON  &kp SLASH        &kp UNDERSCORE   &none
+             &none      &kp LCTRL      &kp LGUI   &sk RALT          &none      &kp COLON  &kp SLASH        &kp UNDERSCORE   &none
             >;
         };
 
@@ -320,7 +320,7 @@
 &mo 5          &kp K_REDO      &kp K_COPY        &kp K_PASTE           &kp K_CUT                  &kp SLASH     &kp PLUS               &kp DOT            &kp MINUS        &kp STAR
 &kp N1         &kp N2          &kp N3            &kp N4                &kp N5                     &kp NUMBER_6  &kp N7                 &kp N8             &kp N9           &kp N0
 &kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp DELETE                 &kp SLASH     &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN
-               &none           &none             &none                 &none       &kp BACKSPACE  &kp SPACE     &kp COMMA              &none
+              &none &none           &none             &none                 &none       &kp BACKSPACE  &kp SPACE     &kp COMMA              &none
             >;
         };
 
@@ -329,7 +329,7 @@
 &none  &kp K_MUTE      &kp K_VOL_DN      &kp C_VOL_UP      &kp SCROLLLOCK              &kp PAUSE_BREAK  &kp F1  &kp F2  &kp F3  &kp F10
 &none  &kp K_PREV      &kp K_NEXT        &kp K_PLAY_PAUSE  &kp KP_NUMLOCK              &kp PRINTSCREEN  &kp F4  &kp F5  &kp F6  &kp F11
 &none  &none           &kp C_BRI_DN      &kp C_BRI_UP      &kp INSERT                  &kp K_PASTE      &kp F7  &kp F8  &kp F9  &kp F12
-       &sk LEFT_SHIFT  &sk LEFT_CONTROL  &sk LEFT_ALT      &none           &sys_reset  &none            &none   &none
+      &none &sk LEFT_SHIFT  &sk LEFT_CONTROL  &sk LEFT_ALT      &none           &sys_reset  &none            &none   &none
             >;
         };
 
@@ -338,7 +338,7 @@
 &none         &none          &kp K_COPY      &kp K_PASTE   &none         &none  &kp PAGE_UP  &kp PAGE_DOWN  &none      &none
 &kp LEFT_GUI  &kp LCTRL      &kp LEFT_SHIFT  &kp LEFT_ALT  &none         &none  &kp LEFT     &kp DOWN       &kp RIGHT  &kp UP
 &none         &kp LS(ENTER)  &kp ENTER       &none         &none         &none  &kp END      &kp HOME       &kp C_PP   &none
-              &none          &sl 5           &none         &none  &none  &none  &none        &none
+          &none    &none          &sl 5           &none         &none  &none  &none  &none        &none
             >;
         };
 
@@ -347,7 +347,7 @@
 &none       &none         &none         &none         &sys_reset          &sys_reset   &none  &none  &none  &none
 &none       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &sys_reset          &none        &none  &none  &none  &none
 &bt BT_CLR  &none         &none         &none         &bootloader         &bootloader  &none  &none  &none  &none
-            &none         &none         &none         &none        &none  &none        &none  &none
+          &none  &none         &none         &none         &none        &none  &none        &none  &none
             >;
         };
     };
