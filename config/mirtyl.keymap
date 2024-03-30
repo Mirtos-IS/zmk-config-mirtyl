@@ -14,13 +14,9 @@
     retro-tap;
 };
 
-&sk {
-    quick-release;
-};
+&sk { quick-release; };
 
-&lt {
-    quick-tap-ms = <200>;
-};
+&lt { quick-tap-ms = <200>; };
 
 / {
     behaviors {
@@ -287,10 +283,10 @@
             //       | SHF | GUI | LWR | SPC |   | ENT | RSE  | ALT | ENT |
 
             bindings = <
-&kp Y           &kp C         &kp L             &kp M           &kp K               &kp Z      &kp F       &kp U                           &lt 5 COMMA  &kp APOSTROPHE
-&mt LEFT_GUI I  &mt LCTRL S   &mt LEFT_SHIFT R  &mt LALT T      &kp G               &kp P      &mt LALT N  &mt RIGHT_SHIFT E               &mt RCTRL A  &mt RIGHT_GUI O
-&kp Q           &kp V         &kp W             &kp D           &kp J               &kp B      &kp H       &kp SEMICOLON                   &kp DOT      &kp X
-&none           &lt 2 ESCAPE  &sk LEFT_CONTROL  &sk LEFT_SHIFT  &sl 1  &lt 4 SPACE  &lt 3 TAB  &kp ENTER   &mt LS(LC(LA(LGUI))) BACKSPACE
+&kp Y  &kp C         &kp L             &kp M           &kp K               &kp Z      &kp F       &kp U                           &lt 5 COMMA  &kp APOSTROPHE
+&kp I  &mt LCTRL S   &mt LEFT_SHIFT R  &mt LALT T      &kp G               &kp P      &mt LALT N  &mt RIGHT_SHIFT E               &mt RCTRL A  &mt RIGHT_GUI O
+&kp Q  &kp V         &kp W             &kp D           &kp J               &kp B      &kp H       &kp SEMICOLON                   &kp DOT      &kp X
+&none  &lt 2 ESCAPE  &sk LEFT_CONTROL  &sk LEFT_SHIFT  &sl 1  &lt 4 SPACE  &lt 3 TAB  &kp DELETE  &mt LS(LC(LA(LGUI))) BACKSPACE
             >;
         };
 
@@ -305,7 +301,7 @@
 &kp DOUBLE_QUOTES  &kp QUESTION   &kp MINUS  &kp GREATER_THAN  &kp TILDE                &kp GRAVE        &kp CARET        &Macros_u_acute  &Macros_a_caret  &Macros_o_caret
 &Macros_i_acute    &kp AT         &kp EQUAL  &kp DOLLAR        &kp HASH                 &kp AMPS         &kp STAR         &Macros_e_acute  &Macros_a_acute  &Macros_o_acute
 &kp PIPE           &kp BACKSLASH  &Cedilha   &kp PERCENT       &kp PLUS                 &Macros_a_grave  &kp EXCLAMATION  &Macros_e_caret  &Macros_a_tilde  &Macros_o_tilde
-&none              &kp LCTRL      &none      &sk RALT          &kp LEFT_WIN  &kp SLASH  &kp UNDER        &kp DELETE       &kp COLON
+&none              &kp LCTRL      &none      &sk RALT          &kp LEFT_WIN  &kp SLASH  &kp UNDER        &none            &kp COLON
             >;
         };
 
@@ -317,10 +313,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&mo 5          &kp K_REDO      &kp K_COPY        &kp K_PASTE           &kp K_CUT              &kp SLASH     &kp PLUS               &kp DOT            &kp MINUS        &kp STAR
-&kp N1         &kp N2          &kp N3            &kp N4                &kp N5                 &kp NUMBER_6  &kp N7                 &kp N8             &kp N9           &kp N0
-&kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp DELETE             &kp SLASH     &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN
-&none          &none           &none             &none                 &none       &kp COMMA  &kp SPACE     &none                  &kp BACKSPACE
+&mo 5          &kp K_REDO      &kp K_COPY        &kp K_PASTE           &kp K_CUT                &kp SLASH     &kp PLUS               &kp DOT            &kp MINUS        &kp STAR
+&kp N6         &kp N3          &kp N1            &kp N2                &kp NUMBER_7             &kp NUMBER_9  &kp N4                 &kp NUMBER_0       &kp N5           &kp N8
+&kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp DELETE               &kp SLASH     &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN
+&none          &none           &none             &none                 &none         &kp COMMA  &kp SPACE     &kp DELETE             &kp BACKSPACE
             >;
         };
 
