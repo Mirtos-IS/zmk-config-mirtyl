@@ -47,16 +47,6 @@
             bindings = <&kp ENTER>;
             key-positions = <8 7>;
         };
-
-        shift_enter {
-            bindings = <&Shift_enter>;
-            key-positions = <6 8>;
-        };
-
-        tmux_prefix {
-            bindings = <&kp LC(R)>;
-            key-positions = <21 23>;
-        };
     };
 
     macros {
@@ -288,10 +278,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp DOUBLE_QUOTES  &kp QUESTION   &kp MINUS  &kp GREATER_THAN  &kp TILDE                &kp GRAVE        &kp CARET        &Macros_u_acute  &Macros_a_caret  &Macros_o_caret
-&Macros_i_acute    &kp AT         &kp EQUAL  &kp DOLLAR        &kp HASH                 &kp AMPS         &kp STAR         &Macros_e_acute  &Macros_a_acute  &Macros_o_acute
-&kp PIPE           &kp BACKSLASH  &Cedilha   &kp PERCENT       &kp PLUS                 &Macros_a_grave  &kp EXCLAMATION  &Macros_e_caret  &Macros_a_tilde  &Macros_o_tilde
-&none              &kp RIGHT_ALT  &none      &sk LEFT_CONTROL  &kp LEFT_WIN  &kp SLASH  &kp UNDER        &none            &kp COLON
+&kp DOUBLE_QUOTES  &kp QUESTION   &kp MINUS  &kp GREATER_THAN  &kp TILDE               &kp GRAVE        &kp CARET        &Macros_u_acute  &Macros_a_caret  &Macros_o_caret
+&Macros_i_acute    &kp AT         &kp EQUAL  &kp DOLLAR        &kp HASH                &kp AMPS         &kp STAR         &Macros_e_acute  &Macros_a_acute  &Macros_o_acute
+&kp PIPE           &kp BACKSLASH  &Cedilha   &kp PERCENT       &kp PLUS                &Macros_a_grave  &kp EXCLAMATION  &Macros_e_caret  &Macros_a_tilde  &Macros_o_tilde
+&none              &kp RIGHT_ALT  &none      &sk LEFT_CONTROL  &kp LS(F12)  &kp SLASH  &kp UNDER        &none            &kp COLON
             >;
         };
 
