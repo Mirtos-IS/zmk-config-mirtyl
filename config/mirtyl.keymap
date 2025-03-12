@@ -244,7 +244,7 @@
 &kp Y  &kp C  &kp L         &kp M           &kp K               &kp Z      &kp F      &kp U               &lt 5 COMMA  &kp APOSTROPHE
 &kp I  &kp S  &kp R         &kp T           &kp G               &kp P      &kp N      &kp E               &kp A        &kp O
 &kp Q  &kp V  &kp W         &kp D           &kp J               &kp B      &kp H      &kp SEMICOLON       &kp DOT      &kp X
-&none  &sl 2  &sk LEFT_ALT  &sk LEFT_SHIFT  &sl 1  &lt 4 SPACE  &lt 3 ESC  &kp LCTRL  &mt LGUI BACKSPACE
+&none  &sl 2  &sk LEFT_ALT  &sk LEFT_SHIFT  &sl 1  &lt 4 SPACE  &lt 3 ESC  &sk LCTRL  &mt LGUI BACKSPACE
             >;
         };
 
