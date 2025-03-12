@@ -37,7 +37,14 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <7 8>;
+        };
+    };
 
     macros {
         ZMK_MACRO(
@@ -234,10 +241,10 @@
             //       | SHF | GUI | LWR | SPC |   | ENT | RSE  | ALT | ENT |
 
             bindings = <
-&kp Y           &kp C        &kp L             &kp M           &kp K               &kp Z      &kp F       &kp U                           &lt 5 COMMA  &kp APOSTROPHE
-&mt LEFT_GUI I  &mt LCTRL S  &mt LEFT_SHIFT R  &mt LALT T      &kp G               &kp P      &mt LALT N  &mt RIGHT_SHIFT E               &mt RCTRL A  &mt LEFT_GUI O
-&kp Q           &kp V        &kp W             &kp D           &kp J               &kp B      &kp H       &kp SEMICOLON                   &kp DOT      &kp X
-&none           &sl 2        &sk LEFT_CONTROL  &sk LEFT_SHIFT  &sl 1  &lt 4 SPACE  &lt 3 ESC  &kp DELETE  &mt LS(LA(LC(LGUI))) BACKSPACE
+&kp Y  &kp C  &kp L         &kp M           &kp K               &kp Z      &kp F      &kp U               &lt 5 COMMA  &kp APOSTROPHE
+&kp I  &kp S  &kp R         &kp T           &kp G               &kp P      &kp N      &kp E               &kp A        &kp O
+&kp Q  &kp V  &kp W         &kp D           &kp J               &kp B      &kp H      &kp SEMICOLON       &kp DOT      &kp X
+&none  &sl 2  &sk LEFT_ALT  &sk LEFT_SHIFT  &sl 1  &lt 4 SPACE  &lt 3 ESC  &kp LCTRL  &mt LGUI BACKSPACE
             >;
         };
 
