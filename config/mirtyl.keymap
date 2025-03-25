@@ -30,7 +30,7 @@
             label = "GLOBAL_QUICK_TAP";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <140>;
             quick-tap-ms = <200>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
@@ -246,10 +246,10 @@
             //       | SHF | GUI | LWR | SPC |   | ENT | RSE  | ALT | ENT |
 
             bindings = <
-&kp Y  &kp C  &kp L         &kp M           &kp K               &kp Z      &kp F             &kp U               &lt 4 COMMA  &kp APOSTROPHE
-&kp I  &kp S  &kp R         &mt LEFT_ALT T  &kp G               &kp P      &mt LEFT_ALT N    &kp E               &kp A        &kp O
-&kp Q  &kp V  &kp W         &kp D           &kp J               &kp B      &kp H             &kp SEMICOLON       &kp DOT      &kp X
-&none  &sl 2  &sk LEFT_ALT  &sk LEFT_SHIFT  &sl 1  &lt 3 SPACE  &sk LCTRL  &mt LEFT_ALT TAB  &mt LGUI BACKSPACE
+&kp Y           &kp C  &kp L         &kp M           &kp K               &kp Z      &kp F             &kp U               &lt 4 COMMA  &kp APOSTROPHE
+&kp I           &kp S  &kp R         &kp T           &kp G               &kp P      &kp N             &kp E               &kp A        &kp O
+&mt LEFT_ALT Q  &kp V  &kp W         &kp D           &kp J               &kp B      &kp H             &kp SEMICOLON       &kp DOT      &mt LEFT_ALT X
+&none           &sl 2  &sk LEFT_ALT  &sk LEFT_SHIFT  &sl 1  &lt 3 SPACE  &sk LCTRL  &mt LEFT_ALT TAB  &mt LGUI BACKSPACE
             >;
         };
 
