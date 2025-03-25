@@ -247,7 +247,7 @@
 
             bindings = <
 &kp Y  &kp C  &kp L         &kp M           &kp K               &kp Z      &kp F             &kp U               &lt 4 COMMA  &kp APOSTROPHE
-&kp I  &kp S  &kp R         &kp T           &kp G               &kp P      &kp N             &kp E               &kp A        &kp O
+&kp I  &kp S  &kp R         &mt LEFT_ALT T  &kp G               &kp P      &mt LEFT_ALT N    &kp E               &kp A        &kp O
 &kp Q  &kp V  &kp W         &kp D           &kp J               &kp B      &kp H             &kp SEMICOLON       &kp DOT      &kp X
 &none  &sl 2  &sk LEFT_ALT  &sk LEFT_SHIFT  &sl 1  &lt 3 SPACE  &sk LCTRL  &mt LEFT_ALT TAB  &mt LGUI BACKSPACE
             >;
@@ -264,7 +264,7 @@
 &kp DOUBLE_QUOTES  &kp QUESTION   &kp MINUS  &kp GREATER_THAN  &kp TILDE                 &kp GRAVE        &kp CARET        &Macros_u_acute  &Macros_a_caret  &Macros_o_caret
 &Macros_i_acute    &kp AT         &kp EQUAL  &kp DOLLAR        &kp HASH                  &kp AMPS         &kp STAR         &Macros_e_acute  &Macros_a_acute  &Macros_o_acute
 &kp PIPE           &kp BACKSLASH  &Cedilha   &kp PERCENT       &kp PLUS                  &Macros_a_grave  &kp EXCLAMATION  &Macros_e_caret  &Macros_a_tilde  &Macros_o_tilde
-&none              &sk RIGHT_ALT  &none      &sk LEFT_CONTROL  &sk LEFT_META  &kp SLASH  &kp UNDER        &none            &kp COLON
+&none              &sk RIGHT_ALT  &none      &sk LEFT_CONTROL  &sk LEFT_META  &kp SLASH  &kp UNDER        &none            &kp ESCAPE
             >;
         };
 
