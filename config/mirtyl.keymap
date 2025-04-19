@@ -21,8 +21,9 @@
 
 &lt {
     quick-tap-ms = <200>;
-    tapping-term-ms = <100>;
+    tapping-term-ms = <200>;
     flavor = "tap-preferred";
+    retro-tap;
 };
 
 &sl { release-after-ms = <300>; };
@@ -38,6 +39,17 @@
             quick-tap-ms = <200>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
+        };
+
+        qlt: qlt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "QLT";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <100>;
+            retro-tap;
+            flavor = "balanced";
         };
     };
 
@@ -250,10 +262,10 @@
             //       | SHF | GUI | LWR | SPC |   | ENT | RSE  | ALT | ENT |
 
             bindings = <
-&kp Y           &kp C         &kp L         &kp M           &kp K               &kp Z      &kp F             &kp U               &lt 5 COMMA  &kp APOSTROPHE
-&kp I           &kp S         &kp R         &kp T           &kp G               &kp P      &kp N             &kp E               &kp A        &kp O
-&mt LEFT_ALT Q  &kp V         &kp W         &kp D           &kp J               &kp B      &kp H             &kp SEMICOLON       &kp DOT      &mt LEFT_ALT X
-&none           &lt 2 ESCAPE  &sk LEFT_ALT  &sk LEFT_SHIFT  &sl 1  &lt 4 SPACE  &sk LCTRL  &mt LEFT_ALT TAB  &mt LGUI BACKSPACE
+&kp Y           &kp C          &kp L         &kp M           &kp K               &kp Z      &kp F             &kp U               &lt 5 COMMA  &kp APOSTROPHE
+&kp I           &kp S          &kp R         &kp T           &kp G               &kp P      &kp N             &kp E               &kp A        &kp O
+&mt LEFT_ALT Q  &kp V          &kp W         &kp D           &kp J               &kp B      &kp H             &kp SEMICOLON       &kp DOT      &mt LEFT_ALT X
+&none           &qlt 2 ESCAPE  &sk LEFT_ALT  &sk LEFT_SHIFT  &sl 1  &lt 4 SPACE  &sk LCTRL  &mt LEFT_ALT TAB  &mt LGUI BACKSPACE
             >;
         };
 
@@ -265,10 +277,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp DOUBLE_QUOTES  &kp QUESTION   &kp MINUS  &kp GREATER_THAN  &kp TILDE             &kp GRAVE  &kp ASTERISK     &Macros_e_acute      &kp DOLLAR     &kp HASH
-&kp N6             &kp NUMBER_3   &kp N1     &kp N2            &kp N7                &kp N9     &kp NUMBER_4     &kp N0     &kp N5         &kp N8
-&kp PIPE           &kp BACKSLASH  &Cedilha   &kp PERCENT       &kp PLUS              &Macros_a_tilde     &kp EXCLAMATION  &kp EQUAL  &kp AMPERSAND  &kp AT_SIGN
-&none              &sk RIGHT_ALT  &none      &sk LEFT_META     &sl 3      &kp SLASH  &kp UNDER  &none            &kp COLON
+&kp DOUBLE_QUOTES  &kp QUESTION   &kp MINUS  &kp GREATER_THAN  &kp TILDE             &kp GRAVE        &kp ASTERISK     &Macros_e_acute  &kp DOLLAR     &kp HASH
+&kp N6             &kp NUMBER_3   &kp N1     &kp N2            &kp N7                &kp N9           &kp NUMBER_4     &kp N0           &kp N5         &kp N8
+&kp PIPE           &kp BACKSLASH  &Cedilha   &kp PERCENT       &kp PLUS              &Macros_a_tilde  &kp EXCLAMATION  &kp EQUAL        &kp AMPERSAND  &kp AT_SIGN
+&none              &sk RIGHT_ALT  &none      &sk LEFT_META     &sl 3      &kp SLASH  &kp UNDER        &none            &kp COLON
             >;
         };
 
