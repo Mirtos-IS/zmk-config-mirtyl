@@ -19,7 +19,11 @@
     release-after-ms = <300>;
 };
 
-&lt { quick-tap-ms = <200>; };
+&lt {
+    quick-tap-ms = <200>;
+    tapping-term-ms = <100>;
+    flavor = "tap-preferred";
+};
 
 &sl { release-after-ms = <300>; };
 
@@ -246,10 +250,10 @@
             //       | SHF | GUI | LWR | SPC |   | ENT | RSE  | ALT | ENT |
 
             bindings = <
-&kp Y           &kp C  &kp L         &kp M           &kp K               &kp Z      &kp F             &kp U               &lt 5 COMMA  &kp APOSTROPHE
-&kp I           &kp S  &kp R         &kp T           &kp G               &kp P      &kp N             &kp E               &kp A        &kp O
-&mt LEFT_ALT Q  &kp V  &kp W         &kp D           &kp J               &kp B      &kp H             &kp SEMICOLON       &kp DOT      &mt LEFT_ALT X
-&none           &sl 2  &sk LEFT_ALT  &sk LEFT_SHIFT  &sl 1  &lt 4 SPACE  &sk LCTRL  &mt LEFT_ALT TAB  &mt LGUI BACKSPACE
+&kp Y           &kp C         &kp L         &kp M           &kp K               &kp Z      &kp F             &kp U               &lt 5 COMMA  &kp APOSTROPHE
+&kp I           &kp S         &kp R         &kp T           &kp G               &kp P      &kp N             &kp E               &kp A        &kp O
+&mt LEFT_ALT Q  &kp V         &kp W         &kp D           &kp J               &kp B      &kp H             &kp SEMICOLON       &kp DOT      &mt LEFT_ALT X
+&none           &lt 2 ESCAPE  &sk LEFT_ALT  &sk LEFT_SHIFT  &sl 1  &lt 4 SPACE  &sk LCTRL  &mt LEFT_ALT TAB  &mt LGUI BACKSPACE
             >;
         };
 
@@ -268,7 +272,7 @@
             >;
         };
 
-        symnum {
+        ExtraSymbols {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
